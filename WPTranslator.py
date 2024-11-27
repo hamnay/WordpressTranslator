@@ -149,10 +149,10 @@ class wordpressTranslator:
         response = requests.post(url, json=data, auth=HTTPBasicAuth(self.username, self.password))
         if response.status_code == 200:
             print("Post updated successfully!")
-            print(response.json())
+            #print(response.json())
         else:
             print(f"Failed to update post. Status code: {response.status_code}")
-            print(response.json())
+            #print(response.json())
         return 0
     
 if __name__=="__main__":
