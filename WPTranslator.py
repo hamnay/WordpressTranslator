@@ -164,6 +164,4 @@ if __name__=="__main__":
     print("hahah")
     p0=posts[0]
     p0 = WT.translatePost(posts[0],"French",model="gpt-4o-mini")
-    WT.UpdatePost(p0)
-    
-    
+    WT.UpdatePost(p0)    
