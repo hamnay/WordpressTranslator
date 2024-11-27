@@ -121,7 +121,6 @@ class wordpressTranslator:
                     messages=messages,
                 )
                 translated_content = response.choices[0].message.content
-                print(translated_content)
                 # Regular expression to extract JSON
                 json_pattern = re.compile(r'\{[^}]*\}', re.DOTALL)
                 json_match = json_pattern.search(translated_content)
